@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+		<main class="timer-card">
+
+			<h1>Pomodoro Timer</h1>
+
+			<div class="modes">
+				<button class="active" data-mode="focus">Focus</button>
+				<button data-mode="break">Short Break</button>
+			</div>		
+			
+			<div class="tomato" id="tomato">
+				<div class="tomato-body">
+					<div id="tomato-fill" class="tomato-fill"></div>
+				</div>
+				<div class="leaf"></div>
+				<div class="tomato-content">
+					<div id="timer" class="timer">25:00</div>
+				</div>
+			</div>
+
+			<p id="message" class="message">Ready To Focus ?</p>
+
+			<div class="controls">
+				<button id="start" class="start">Start</button>
+				<button id="reset" class="reset">Reset</button>
+			</div>
+
+			<audio id="alarm" src="audio/alarm.wav" preload="auto"></audio>
+
+		</main>
+    <script src="main.js"></script>
+</body>
+</html>
